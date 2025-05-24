@@ -1,0 +1,4148 @@
+{
+  "metadata": {
+    "device": {
+      "deviceId": "C:\\Users\\jkfdg\\.android\\avd\\Pixel_5.avd",
+      "name": "Pixel 5",
+      "serialNumber": "emulator-5554",
+      "isOnline": true,
+      "release": "13",
+      "sdk": 33,
+      "featureLevel": 33,
+      "model": "Pixel 5",
+      "type": "HANDHELD",
+      "isEmulator": true
+    },
+    "filter": "",
+    "projectApplicationIds": [
+      "com.example.parkingapp",
+      "com.example.parkingapp.test"
+    ]
+  },
+  "logcatMessages": [
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666172,
+          "nanos": 906000000
+        }
+      },
+      "message": "Main / Touch event: MotionEvent { action\u003dACTION_DOWN, actionButton\u003d0, id[0]\u003d0, x[0]\u003d955.9424, y[0]\u003d1841.9073, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d15992836, downTime\u003d15992836, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d760026407 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666172,
+          "nanos": 908000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_DOWN, actionButton\u003d0, id[0]\u003d0, x[0]\u003d955.9424, y[0]\u003d1841.9073, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d15992836, downTime\u003d15992836, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d760026407 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 2157,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666172,
+          "nanos": 926000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d11880.45ms min\u003d6.24ms max\u003d83038.27ms count\u003d7"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 18000000
+        }
+      },
+      "message": "Main / Touch event: MotionEvent { action\u003dACTION_UP, actionButton\u003d0, id[0]\u003d0, x[0]\u003d955.9424, y[0]\u003d1841.9073, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d15992941, downTime\u003d15992836, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d1047455568 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 18000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_UP, actionButton\u003d0, id[0]\u003d0, x[0]\u003d955.9424, y[0]\u003d1841.9073, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d15992941, downTime\u003d15992836, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d1047455568 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 20000000
+        }
+      },
+      "message": "Main / start: startAppShortcutOrInfoActivity"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "ActivityTaskManager",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 21000000
+        }
+      },
+      "message": "START u0 {act\u003dandroid.intent.action.MAIN cat\u003d[android.intent.category.LAUNCHER] flg\u003d0x10200000 cmp\u003dcom.example.parkingapp/.MainActivity bnds\u003d[826,1788][1008,1993]} from uid 10155"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 22000000
+        }
+      },
+      "message": "Compat change id reported: 265464455; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 23000000
+        }
+      },
+      "message": "Compat change id reported: 265452344; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 23000000
+        }
+      },
+      "message": "Compat change id reported: 266124927; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 24000000
+        }
+      },
+      "message": "Compat change id reported: 265451093; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 24000000
+        }
+      },
+      "message": "Compat change id reported: 265456536; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 24000000
+        }
+      },
+      "message": "Compat change id reported: 255940284; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 24000000
+        }
+      },
+      "message": "Compat change id reported: 236283604; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 25000000
+        }
+      },
+      "message": "Compat change id reported: 263959004; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 25000000
+        }
+      },
+      "message": "Compat change id reported: 264304459; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 25000000
+        }
+      },
+      "message": "Compat change id reported: 264301586; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 25000000
+        }
+      },
+      "message": "Compat change id reported: 254631730; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 25000000
+        }
+      },
+      "message": "Compat change id reported: 273509367; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 25000000
+        }
+      },
+      "message": "Compat change id reported: 263259275; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 30000000
+        }
+      },
+      "message": "Compat change id reported: 194480991; UID 10174; state: ENABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 32000000
+        }
+      },
+      "message": "Compat change id reported: 174042980; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 34000000
+        }
+      },
+      "message": "Compat change id reported: 184838306; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 34000000
+        }
+      },
+      "message": "Compat change id reported: 185004937; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 354,
+        "tid": 516,
+        "applicationId": "audioserver",
+        "processName": "audioserver",
+        "tag": "AudioFlinger",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 35000000
+        }
+      },
+      "message": "mixer(0x7a14aa2f79a0) throttle end: throttle time(32)"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 35000000
+        }
+      },
+      "message": "Compat change id reported: 181136395; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 36000000
+        }
+      },
+      "message": "Compat change id reported: 174042936; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 37000000
+        }
+      },
+      "message": "Compat change id reported: 197654537; UID 10174; state: ENABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 39000000
+        }
+      },
+      "message": "Compat change id reported: 205907456; UID 10174; state: ENABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 43000000
+        }
+      },
+      "message": "Compat change id reported: 194833441; UID 10174; state: ENABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 971,
+        "tid": 1034,
+        "applicationId": "com.android.systemui",
+        "processName": "com.android.systemui",
+        "tag": "SplashScreenView",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 44000000
+        }
+      },
+      "message": "Build android.window.SplashScreenView{1500c63 V.E...... ......ID 0,0-0,0}\nIcon: view: android.widget.ImageView{a6da060 V.ED..... ......I. 0,0-0,0 #10204dd android:id/splashscreen_icon_view} drawable: com.android.wm.shell.startingsurface.SplashscreenIconDrawableFactory$ImmobileIconDrawable@1cab919 size: 440\nBranding: view: android.view.View{a0c9dde G.ED..... ......I. 0,0-0,0 #10204dc android:id/splashscreen_branding_view} drawable: null size w: 0 h: 0"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 971,
+        "tid": 1047,
+        "applicationId": "com.android.systemui",
+        "processName": "com.android.systemui",
+        "tag": "Parcel",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 45000000
+        }
+      },
+      "message": "Expecting binder but got null!"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2399,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 46000000
+        }
+      },
+      "message": "Compat change id reported: 168419799; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2399,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 47000000
+        }
+      },
+      "message": "Compat change id reported: 273564678; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2399,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CoreBackPreview",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 48000000
+        }
+      },
+      "message": "Window{2cbb360 u0 Splash Screen com.example.parkingapp}: Setting back callback OnBackInvokedCallbackInfo{mCallback\u003dandroid.window.IOnBackInvokedCallback$Stub$Proxy@61068de, mPriority\u003d0}"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 561,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 49000000
+        }
+      },
+      "message": "Compat change id reported: 135634846; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 570,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 50000000
+        }
+      },
+      "message": "Compat change id reported: 143937733; UID 10174; state: ENABLED"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "MainContentCaptureSession",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 56000000
+        }
+      },
+      "message": "Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state\u003d2 (ACTIVE), disabled\u003dfalse], reason\u003dFULL"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 311,
+        "tid": 311,
+        "applicationId": "pid-311",
+        "processName": "pid-311",
+        "tag": "Zygote",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 64000000
+        }
+      },
+      "message": "Forked child process 10026"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 536,
+        "tid": 570,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "ActivityManager",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 67000000
+        }
+      },
+      "message": "Start proc 10026:com.example.parkingapp/u0a174 for next-top-activity {com.example.parkingapp/com.example.parkingapp.MainActivity}"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "mple.parkingapp",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 71000000
+        }
+      },
+      "message": "Late-enabling -Xcheck:jni"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 354,
+        "tid": 516,
+        "applicationId": "audioserver",
+        "processName": "audioserver",
+        "tag": "AudioFlinger",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 84000000
+        }
+      },
+      "message": "mixer(0x7a14aa2f79a0) throttle end: throttle time(33)"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "mple.parkingapp",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 108000000
+        }
+      },
+      "message": "Using CollectorTypeCC GC."
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "mple.parkingapp",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 110000000
+        }
+      },
+      "message": "Unexpected CPU variant for x86: x86_64.\nKnown variants: atom, sandybridge, silvermont, kabylake, default"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 406,
+        "tid": 433,
+        "applicationId": "adbd",
+        "processName": "adbd",
+        "tag": "adbd",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 116000000
+        }
+      },
+      "message": "jdwp connection from 10026"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 536,
+        "tid": 1475,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "AppsFilter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 137000000
+        }
+      },
+      "message": "interaction: PackageSetting{413c65d com.example.parkingapp/10174} -\u003e PackageSetting{6a43867 com.google.android.apps.nexuslauncher/10155} BLOCKED"
+    },
+    {
+      "header": {
+        "logLevel": "VERBOSE",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "studio.deploy",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 167000000
+        }
+      },
+      "message": "Startup agent attached to VM"
+    },
+    {
+      "header": {
+        "logLevel": "VERBOSE",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "studio.deploy",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 167000000
+        }
+      },
+      "message": "No existing instrumentation found. Loading instrumentation from instruments-94be47bb.jar"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "mple.parkingapp",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 173000000
+        }
+      },
+      "message": "DexFile /data/data/com.example.parkingapp/code_cache/.studio/instruments-94be47bb.jar is in boot class path but is not in a known location"
+    },
+    {
+      "header": {
+        "logLevel": "VERBOSE",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "studio.deploy",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 174000000
+        }
+      },
+      "message": "Applying transforms with cached classes"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "re-initialized\u003e",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 163000000
+        }
+      },
+      "message": "type\u003d1400 audit(0.0:68): avc: granted { execute } for path\u003d\"/data/data/com.example.parkingapp/code_cache/startup_agents/e1fc216f-agent.so\" dev\u003d\"dm-34\" ino\u003d139710 scontext\u003du:r:untrusted_app:s0:c174,c256,c512,c768 tcontext\u003du:object_r:app_data_file:s0:c174,c256,c512,c768 tclass\u003dfile app\u003dcom.example.parkingapp"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "mple.parkingapp",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 185000000
+        }
+      },
+      "message": "Redefining intrinsic method java.lang.Thread java.lang.Thread.currentThread(). This may cause the unexpected use of the original definition of java.lang.Thread java.lang.Thread.currentThread()in methods that have already been compiled."
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "mple.parkingapp",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 185000000
+        }
+      },
+      "message": "Redefining intrinsic method boolean java.lang.Thread.interrupted(). This may cause the unexpected use of the original definition of boolean java.lang.Thread.interrupted()in methods that have already been compiled."
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "studio.deploy",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 187000000
+        }
+      },
+      "message": "Registering DispatchJNI"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "studio.deploy",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 187000000
+        }
+      },
+      "message": "Found com/android/tools/deploy/interpreter/JNI"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 191000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 0,
+        "tid": 0,
+        "applicationId": "",
+        "processName": "",
+        "tag": "",
+        "timestamp": {
+          "seconds": 0,
+          "nanos": 0
+        }
+      },
+      "message": "---------------------------- PROCESS STARTED (10026) for package com.example.parkingapp ----------------------------"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "pid-10026",
+        "processName": "pid-10026",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 193000000
+        }
+      },
+      "message": "Compat change id reported: 171979766; UID 10174; state: ENABLED"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 207000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "ziparchive",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 216000000
+        }
+      },
+      "message": "Unable to open \u0027/data/data/com.example.parkingapp/code_cache/.overlay/base.apk/classes4.dm\u0027: No such file or directory"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "ziparchive",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 217000000
+        }
+      },
+      "message": "Unable to open \u0027/data/data/com.example.parkingapp/code_cache/.overlay/base.apk/classes3.dm\u0027: No such file or directory"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "ziparchive",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 217000000
+        }
+      },
+      "message": "Unable to open \u0027/data/app/~~DBtWsXNnky6vu3aVDZAu_A\u003d\u003d/com.example.parkingapp-XRQcz40GHh0mCjMWVEk_QA\u003d\u003d/base.dm\u0027: No such file or directory"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "ziparchive",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 217000000
+        }
+      },
+      "message": "Unable to open \u0027/data/app/~~DBtWsXNnky6vu3aVDZAu_A\u003d\u003d/com.example.parkingapp-XRQcz40GHh0mCjMWVEk_QA\u003d\u003d/base.dm\u0027: No such file or directory"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 224000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 241000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 258000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 274000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 291000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 307000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 325000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 341000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 357000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 374000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 407000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 425000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 441000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 460000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 474000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 490000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 507000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 524000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 541000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 971,
+        "tid": 1047,
+        "applicationId": "com.android.systemui",
+        "processName": "com.android.systemui",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 544000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d11448.41ms min\u003d3.76ms max\u003d205585.81ms count\u003d18"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 557000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "nativeloader",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 568000000
+        }
+      },
+      "message": "Configuring classloader-namespace for other apk /data/app/~~DBtWsXNnky6vu3aVDZAu_A\u003d\u003d/com.example.parkingapp-XRQcz40GHh0mCjMWVEk_QA\u003d\u003d/base.apk. target_sdk_version\u003d35, uses_libraries\u003d, library_path\u003d/data/app/~~DBtWsXNnky6vu3aVDZAu_A\u003d\u003d/com.example.parkingapp-XRQcz40GHh0mCjMWVEk_QA\u003d\u003d/lib/x86_64:/data/app/~~DBtWsXNnky6vu3aVDZAu_A\u003d\u003d/com.example.parkingapp-XRQcz40GHh0mCjMWVEk_QA\u003d\u003d/base.apk!/lib/x86_64, permitted_path\u003d/data:/mnt/expand:/data/user/0/com.example.parkingapp"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 574000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 591000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "VERBOSE",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "GraphicsEnvironment",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 600000000
+        }
+      },
+      "message": "ANGLE Developer option for \u0027com.example.parkingapp\u0027 set to: \u0027default\u0027"
+    },
+    {
+      "header": {
+        "logLevel": "VERBOSE",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "GraphicsEnvironment",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 601000000
+        }
+      },
+      "message": "ANGLE GameManagerService for com.example.parkingapp: false"
+    },
+    {
+      "header": {
+        "logLevel": "VERBOSE",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "GraphicsEnvironment",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 601000000
+        }
+      },
+      "message": "Neither updatable production driver nor prerelease driver is supported."
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 607000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "NetworkSecurityConfig",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 612000000
+        }
+      },
+      "message": "No Network Security Config specified, using platform default"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "NetworkSecurityConfig",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 613000000
+        }
+      },
+      "message": "No Network Security Config specified, using platform default"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 624000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 648000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 669000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 336,
+        "tid": 336,
+        "applicationId": "android.hardware.graphics.composer@2.4-service",
+        "processName": "android.hardware.graphics.composer@2.4-service",
+        "tag": "RanchuHwc",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 674000000
+        }
+      },
+      "message": "validateDisplay: layer 138 CompositionType 1, fallback to client"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 675000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32ebb10"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10047,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "libEGL",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 712000000
+        }
+      },
+      "message": "loaded /vendor/lib64/egl/libEGL_emulation.so"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10047,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "libEGL",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 718000000
+        }
+      },
+      "message": "loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10047,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "libEGL",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 719000000
+        }
+      },
+      "message": "loaded /vendor/lib64/egl/libGLESv2_emulation.so"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 854000000
+        }
+      },
+      "message": "Compat change id reported: 237531167; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "Parcel",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 857000000
+        }
+      },
+      "message": "Expecting binder but got null!"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 1475,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CoreBackPreview",
+        "timestamp": {
+          "seconds": 1747666173,
+          "nanos": 860000000
+        }
+      },
+      "message": "Window{87085a8 u0 com.example.parkingapp/com.example.parkingapp.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback\u003dandroid.window.IOnBackInvokedCallback$Stub$Proxy@eb9f866, mPriority\u003d0}"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 971,
+        "tid": 1047,
+        "applicationId": "com.android.systemui",
+        "processName": "com.android.systemui",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666174,
+          "nanos": 549000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d5.99ms min\u003d1.10ms max\u003d27.35ms count\u003d59"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "HostConnection",
+        "timestamp": {
+          "seconds": 1747666174,
+          "nanos": 853000000
+        }
+      },
+      "message": "HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 "
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "OpenGLRenderer",
+        "timestamp": {
+          "seconds": 1747666174,
+          "nanos": 854000000
+        }
+      },
+      "message": "Failed to initialize 101010-2 format, error \u003d EGL_SUCCESS"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666174,
+          "nanos": 856000000
+        }
+      },
+      "message": "eglCreateContext: 0x7802af6d6d50: maj 3 min 0 rcv 3"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666174,
+          "nanos": 858000000
+        }
+      },
+      "message": "eglMakeCurrent: 0x7802af6d6d50: ver 3 0 (tinfo 0x7804cdffe080) (first time)"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 148,
+        "tid": 148,
+        "applicationId": "hwservicemanager",
+        "processName": "hwservicemanager",
+        "tag": "hwservicemanager",
+        "timestamp": {
+          "seconds": 1747666174,
+          "nanos": 867000000
+        }
+      },
+      "message": "getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest."
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "Gralloc4",
+        "timestamp": {
+          "seconds": 1747666174,
+          "nanos": 867000000
+        }
+      },
+      "message": "mapper 4.x is not supported"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 971,
+        "tid": 1047,
+        "applicationId": "com.android.systemui",
+        "processName": "com.android.systemui",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666174,
+          "nanos": 868000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d11943.29ms min\u003d11943.29ms max\u003d11943.29ms count\u003d1"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 148,
+        "tid": 148,
+        "applicationId": "hwservicemanager",
+        "processName": "hwservicemanager",
+        "tag": "hwservicemanager",
+        "timestamp": {
+          "seconds": 1747666174,
+          "nanos": 898000000
+        }
+      },
+      "message": "getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest."
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 143,
+        "tid": 143,
+        "applicationId": "servicemanager",
+        "processName": "servicemanager",
+        "tag": "servicemanager",
+        "timestamp": {
+          "seconds": 1747666174,
+          "nanos": 900000000
+        }
+      },
+      "message": "Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest."
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "Gralloc4",
+        "timestamp": {
+          "seconds": 1747666174,
+          "nanos": 902000000
+        }
+      },
+      "message": "allocator 4.x is not supported"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "HostConnection",
+        "timestamp": {
+          "seconds": 1747666174,
+          "nanos": 921000000
+        }
+      },
+      "message": "HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 "
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 10026,
+        "tid": 10042,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "OpenGLRenderer",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 209000000
+        }
+      },
+      "message": "Davey! duration\u003d1552ms; Flags\u003d1, FrameTimelineVsyncId\u003d177318, IntendedVsync\u003d15993569818728, Vsync\u003d15993786485386, InputEventId\u003d0, HandleInputStart\u003d15993793212800, AnimationStart\u003d15993793234200, PerformTraversalsStart\u003d15993793684200, DrawStart\u003d15994853213000, FrameDeadline\u003d15993586485394, FrameInterval\u003d15993793177300, FrameStartTime\u003d16666666, SyncQueued\u003d15994871930000, SyncStart\u003d15994877693700, IssueDrawCommandsStart\u003d15994877826500, SwapBuffers\u003d15995056317000, FrameCompleted\u003d15995128344400, DequeueBufferDuration\u003d18700, QueueBufferDuration\u003d497500, GpuCompleted\u003d15995128232900, SwapBuffersCompleted\u003d15995128344400, DisplayPresentTime\u003d35188667083380, CommandSubmissionCompleted\u003d15995056317000, "
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 558,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "ziparchive",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 212000000
+        }
+      },
+      "message": "Unable to open \u0027/data/app/~~DBtWsXNnky6vu3aVDZAu_A\u003d\u003d/com.example.parkingapp-XRQcz40GHh0mCjMWVEk_QA\u003d\u003d/base.dm\u0027: No such file or directory"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 536,
+        "tid": 558,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "ActivityTaskManager",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 218000000
+        }
+      },
+      "message": "Displayed com.example.parkingapp/.MainActivity: +2s187ms"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "Choreographer",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 224000000
+        }
+      },
+      "message": "Skipped 73 frames!  The application may be doing too much work on its main thread."
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 1475,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 233000000
+        }
+      },
+      "message": "Compat change id reported: 214016041; UID 10174; state: ENABLED"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1825,
+        "tid": 1825,
+        "applicationId": "com.google.android.inputmethod.latin",
+        "processName": "com.google.android.inputmethod.latin",
+        "tag": "GoogleInputMethodService",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 238000000
+        }
+      },
+      "message": "GoogleInputMethodService.onFinishInput():3227 "
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1825,
+        "tid": 1825,
+        "applicationId": "com.google.android.inputmethod.latin",
+        "processName": "com.google.android.inputmethod.latin",
+        "tag": "GoogleInputMethodService",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 243000000
+        }
+      },
+      "message": "GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes \u003d 0, unlocked \u003d true"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1825,
+        "tid": 1825,
+        "applicationId": "com.google.android.inputmethod.latin",
+        "processName": "com.google.android.inputmethod.latin",
+        "tag": "GoogleInputMethodService",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 244000000
+        }
+      },
+      "message": "GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType\u003d0x0(NULL) imeOptions\u003d0x0 privateImeOptions\u003dnull actionName\u003dUNSPECIFIED actionLabel\u003dnull actionId\u003d0 initialSelStart\u003d-1 initialSelEnd\u003d-1 initialCapsMode\u003d0x0 hintText\u003dnull label\u003dnull packageName\u003dcom.example.parkingapp fieldId\u003d-1 fieldName\u003dnull extras\u003dnull}, false)"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1825,
+        "tid": 1825,
+        "applicationId": "com.google.android.inputmethod.latin",
+        "processName": "com.google.android.inputmethod.latin",
+        "tag": "GoogleInputMethodService",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 244000000
+        }
+      },
+      "message": "GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState \u003d false"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1825,
+        "tid": 1825,
+        "applicationId": "com.google.android.inputmethod.latin",
+        "processName": "com.google.android.inputmethod.latin",
+        "tag": "GoogleInputMethodService",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 249000000
+        }
+      },
+      "message": "GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes \u003d 2, unlocked \u003d true"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 2409,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "OneSearchSuggestProvider",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 270000000
+        }
+      },
+      "message": "Shut down the binder channel"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1264,
+        "tid": 3033,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "s.nexuslauncher",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 272000000
+        }
+      },
+      "message": "oneway function results for code 2 on binder at 0x78023f712480 will be dropped but finished with status UNKNOWN_TRANSACTION"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 9874,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "PBSessionCacheImpl",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 285000000
+        }
+      },
+      "message": "Deleted sessionId[9096907835208737] from persistence."
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 294000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32e9050"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1189,
+        "tid": 1515,
+        "applicationId": "com.google.android.bluetooth",
+        "processName": "com.google.android.bluetooth",
+        "tag": "BtGatt.ScanManager",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 296000000
+        }
+      },
+      "message": "uid 10119 isForeground true scanMode -1"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1189,
+        "tid": 1515,
+        "applicationId": "com.google.android.bluetooth",
+        "processName": "com.google.android.bluetooth",
+        "tag": "BtGatt.ScanManager",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 296000000
+        }
+      },
+      "message": "uid 10119 isForeground true scanMode -1"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 308000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 309000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "SearchServiceCore",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 309000000
+        }
+      },
+      "message": "Abort, client detached."
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "MicroDetectionState",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 312000000
+        }
+      },
+      "message": "Should stop hotword detection immediately - true"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 313000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 313000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 6135,
+        "tid": 6564,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms.persistent",
+        "tag": "FontLog",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 318000000
+        }
+      },
+      "message": "Received query Noto Color Emoji Compat, URI content://com.google.android.gms.fonts [CONTEXT service_id\u003d132 ]"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 6135,
+        "tid": 6564,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms.persistent",
+        "tag": "FontLog",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 319000000
+        }
+      },
+      "message": "Query [emojicompat-emoji-font] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id\u003d132 ]"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 6135,
+        "tid": 6564,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms.persistent",
+        "tag": "FontLog",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 322000000
+        }
+      },
+      "message": "Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode\u003dSUCCESS, resolution\u003dnull} [CONTEXT service_id\u003d132 ]"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 6135,
+        "tid": 6954,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms.persistent",
+        "tag": "FontLog",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 350000000
+        }
+      },
+      "message": "Pulling font file for id \u003d 15, cache size \u003d 5 [CONTEXT service_id\u003d132 ]"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 6135,
+        "tid": 6954,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms.persistent",
+        "tag": "FontLog",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 358000000
+        }
+      },
+      "message": "Pulling font file for id \u003d 15, cache size \u003d 5 [CONTEXT service_id\u003d132 ]"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 491000000
+        }
+      },
+      "message": "Could not find layer id -1"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 1475,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CoreBackPreview",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 606000000
+        }
+      },
+      "message": "Window{2cbb360 u0 Splash Screen com.example.parkingapp EXITING}: Setting back callback null"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 1477,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "InputManager-JNI",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 606000000
+        }
+      },
+      "message": "Input channel object \u00272cbb360 Splash Screen com.example.parkingapp (client)\u0027 was disposed without first being removed with the input manager!"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 971,
+        "tid": 1047,
+        "applicationId": "com.android.systemui",
+        "processName": "com.android.systemui",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666175,
+          "nanos": 622000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d16.21ms min\u003d1.04ms max\u003d379.19ms count\u003d40"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666176,
+          "nanos": 190000000
+        }
+      },
+      "message": "Could not find layer id -1"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666176,
+          "nanos": 549000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_DOWN, actionButton\u003d0, id[0]\u003d0, x[0]\u003d675.9558, y[0]\u003d2189.8938, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d15996477, downTime\u003d15996477, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d723550461 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666176,
+          "nanos": 624000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_UP, actionButton\u003d0, id[0]\u003d0, x[0]\u003d675.9558, y[0]\u003d2189.8938, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d15996553, downTime\u003d15996477, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d1038234251 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 971,
+        "tid": 1047,
+        "applicationId": "com.android.systemui",
+        "processName": "com.android.systemui",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666176,
+          "nanos": 627000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d15.37ms min\u003d7.53ms max\u003d32.80ms count\u003d59"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666176,
+          "nanos": 674000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d490.89ms min\u003d18.09ms max\u003d1148.88ms count\u003d3"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "OnBackInvokedCallback",
+        "timestamp": {
+          "seconds": 1747666176,
+          "nanos": 743000000
+        }
+      },
+      "message": "OnBackInvokedCallback is not enabled for the application.\nSet \u0027android:enableOnBackInvokedCallback\u003d\"true\"\u0027 in the application manifest."
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666177,
+          "nanos": 123000000
+        }
+      },
+      "message": "Could not find layer id -1"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10056,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "ProfileInstaller",
+        "timestamp": {
+          "seconds": 1747666179,
+          "nanos": 511000000
+        }
+      },
+      "message": "Installing profile for com.example.parkingapp"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666180,
+          "nanos": 23000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_DOWN, actionButton\u003d0, id[0]\u003d0, x[0]\u003d118.98193, y[0]\u003d205.9497, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d15999952, downTime\u003d15999952, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d570383643 }"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 10026,
+        "tid": 10036,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "mple.parkingapp",
+        "timestamp": {
+          "seconds": 1747666180,
+          "nanos": 83000000
+        }
+      },
+      "message": "Compiler allocated 4355KB to compile void android.view.ViewRootImpl.performTraversals()"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666180,
+          "nanos": 101000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d68.48ms min\u003d6.83ms max\u003d2502.54ms count\u003d48"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666180,
+          "nanos": 121000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_UP, actionButton\u003d0, id[0]\u003d0, x[0]\u003d118.98193, y[0]\u003d205.9497, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16000050, downTime\u003d15999952, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d1038024523 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666180,
+          "nanos": 872000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_DOWN, actionButton\u003d0, id[0]\u003d0, x[0]\u003d182.98828, y[0]\u003d356.98425, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16000801, downTime\u003d16000801, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d278382156 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666180,
+          "nanos": 949000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_UP, actionButton\u003d0, id[0]\u003d0, x[0]\u003d186.97632, y[0]\u003d356.98425, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16000878, downTime\u003d16000801, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d485318767 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1189,
+        "tid": 1515,
+        "applicationId": "com.google.android.bluetooth",
+        "processName": "com.google.android.bluetooth",
+        "tag": "BtGatt.ScanManager",
+        "timestamp": {
+          "seconds": 1747666181,
+          "nanos": 392000000
+        }
+      },
+      "message": "uid 10119 isForeground true scanMode -1"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1189,
+        "tid": 1515,
+        "applicationId": "com.google.android.bluetooth",
+        "processName": "com.google.android.bluetooth",
+        "tag": "BtGatt.ScanManager",
+        "timestamp": {
+          "seconds": 1747666181,
+          "nanos": 392000000
+        }
+      },
+      "message": "uid 10119 isForeground true scanMode -1"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666181,
+          "nanos": 860000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_DOWN, actionButton\u003d0, id[0]\u003d0, x[0]\u003d474.97192, y[0]\u003d398.974, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16001789, downTime\u003d16001789, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d64970755 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666181,
+          "nanos": 882000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d30.99ms min\u003d6.31ms max\u003d954.10ms count\u003d49"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666181,
+          "nanos": 958000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_UP, actionButton\u003d0, id[0]\u003d0, x[0]\u003d474.97192, y[0]\u003d398.974, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16001887, downTime\u003d16001789, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d241430023 }"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "OnBackInvokedCallback",
+        "timestamp": {
+          "seconds": 1747666181,
+          "nanos": 984000000
+        }
+      },
+      "message": "OnBackInvokedCallback is not enabled for the application.\nSet \u0027android:enableOnBackInvokedCallback\u003d\"true\"\u0027 in the application manifest."
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666183,
+          "nanos": 110000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_DOWN, actionButton\u003d0, id[0]\u003d0, x[0]\u003d607.9614, y[0]\u003d2102.915, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16003039, downTime\u003d16003039, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d34563521 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666183,
+          "nanos": 131000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d29.28ms min\u003d6.75ms max\u003d389.07ms count\u003d39"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 10026,
+        "tid": 10039,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "System",
+        "timestamp": {
+          "seconds": 1747666183,
+          "nanos": 168000000
+        }
+      },
+      "message": "A resource failed to call close. "
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666183,
+          "nanos": 185000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_UP, actionButton\u003d0, id[0]\u003d0, x[0]\u003d607.9614, y[0]\u003d2102.915, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16003114, downTime\u003d16003039, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d29653074 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666183,
+          "nanos": 948000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_DOWN, actionButton\u003d0, id[0]\u003d0, x[0]\u003d194.98535, y[0]\u003d720.9668, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16003877, downTime\u003d16003877, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d254422247 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666184,
+          "nanos": 12000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_UP, actionButton\u003d0, id[0]\u003d0, x[0]\u003d194.98535, y[0]\u003d720.9668, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16003941, downTime\u003d16003877, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d484126519 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666184,
+          "nanos": 133000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d12.83ms min\u003d3.53ms max\u003d82.25ms count\u003d56"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666184,
+          "nanos": 232000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_DOWN, actionButton\u003d0, id[0]\u003d0, x[0]\u003d410.96558, y[0]\u003d761.9568, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16004161, downTime\u003d16004161, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d126518279 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666184,
+          "nanos": 301000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_UP, actionButton\u003d0, id[0]\u003d0, x[0]\u003d410.96558, y[0]\u003d761.9568, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16004230, downTime\u003d16004161, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d752213745 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666184,
+          "nanos": 503000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_DOWN, actionButton\u003d0, id[0]\u003d0, x[0]\u003d611.94946, y[0]\u003d727.9651, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16004432, downTime\u003d16004432, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d899522444 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666184,
+          "nanos": 592000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_UP, actionButton\u003d0, id[0]\u003d0, x[0]\u003d611.94946, y[0]\u003d727.9651, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16004521, downTime\u003d16004432, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d686812846 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666184,
+          "nanos": 940000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_DOWN, actionButton\u003d0, id[0]\u003d0, x[0]\u003d266.96777, y[0]\u003d974.9048, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16004869, downTime\u003d16004869, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d884853414 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 47000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_UP, actionButton\u003d0, id[0]\u003d0, x[0]\u003d266.96777, y[0]\u003d974.9048, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16004977, downTime\u003d16004869, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d702791266 }"
+    },
+    {
+      "header": {
+        "logLevel": "ERROR",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "AndroidRuntime",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 65000000
+        }
+      },
+      "message": "FATAL EXCEPTION: main\nProcess: com.example.parkingapp, PID: 10026\njava.lang.IllegalArgumentException: Can\u0027t put value with type class com.example.parkingapp.Reservation into saved state\n\tat androidx.lifecycle.SavedStateHandle.set(SavedStateHandle.kt:290)\n\tat com.example.parkingapp.ReservationScreenKt$ReservationScreen$2.invoke$lambda$11$lambda$10$lambda$9(ReservationScreen.kt:115)\n\tat com.example.parkingapp.ReservationScreenKt$ReservationScreen$2.$r8$lambda$_G8-jGFsxBofud4OxcrVkJ1a3hg(Unknown Source:0)\n\tat com.example.parkingapp.ReservationScreenKt$ReservationScreen$2$$ExternalSyntheticLambda2.invoke(D8$$SyntheticClass:0)\n\tat androidx.compose.foundation.ClickableNode$clickPointerInput$3.invoke-k-4lQ0M(Clickable.kt:639)\n\tat androidx.compose.foundation.ClickableNode$clickPointerInput$3.invoke(Clickable.kt:633)\n\tat androidx.compose.foundation.gestures.TapGestureDetectorKt$detectTapAndPress$2$1.invokeSuspend(TapGestureDetector.kt:255)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\n\tat kotlinx.coroutines.DispatchedTaskKt.resume(DispatchedTask.kt:179)\n\tat kotlinx.coroutines.DispatchedTaskKt.dispatch(DispatchedTask.kt:168)\n\tat kotlinx.coroutines.CancellableContinuationImpl.dispatchResume(CancellableContinuationImpl.kt:474)\n\tat kotlinx.coroutines.CancellableContinuationImpl.resumeImpl(CancellableContinuationImpl.kt:508)\n\tat kotlinx.coroutines.CancellableContinuationImpl.resumeImpl$default(CancellableContinuationImpl.kt:497)\n\tat kotlinx.coroutines.CancellableContinuationImpl.resumeWith(CancellableContinuationImpl.kt:368)\n\tat androidx.compose.ui.input.pointer.SuspendingPointerInputModifierNodeImpl$PointerEventHandlerCoroutine.offerPointerEvent(SuspendingPointerInputFilter.kt:719)\n\tat androidx.compose.ui.input.pointer.SuspendingPointerInputModifierNodeImpl.dispatchPointerEvent(SuspendingPointerInputFilter.kt:598)\n\tat androidx.compose.ui.input.pointer.SuspendingPointerInputModifierNodeImpl.onPointerEvent-H0pRuoY(SuspendingPointerInputFilter.kt:620)\n\tat androidx.compose.foundation.AbstractClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:1044)\n\tat androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:387)\n\tat androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:373)\n\tat androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:229)\n\tat androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:144)\n\tat androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:120)\n\tat androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:1993)\n\tat androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:1944)\n\tat androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:1828)\n\tat android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3121)\n\tat android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2802)\n\tat android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3121)\n\tat android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2802)\n\tat android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3121)\n\tat android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2802)\n\tat android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3121)\n\tat android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2802)\n\tat com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:500)\n\tat com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:1912)\n\tat android.app.Activity.dispatchTouchEvent(Activity.java:4299)\n\tat com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:458)\n\tat android.view.View.dispatchPointerEvent(View.java:15309)\n\tat android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:6778)"
+    },
+    {
+      "header": {
+        "logLevel": "ERROR",
+        "pid": 10026,
+        "tid": 10026,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "AndroidRuntime",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 66000000
+        }
+      },
+      "message": "\tat android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:6578)\n\tat android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:6034)\n\tat android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:6091)\n\tat android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:6057)\n\tat android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:6222)\n\tat android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:6065)\n\tat android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:6279)\n\tat android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:6038)\n\tat android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:6091)\n\tat android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:6057)\n\tat android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:6065)\n\tat android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:6038)\n\tat android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:9206)\n\tat android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:9157)\n\tat android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:9126)\n\tat android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:9329)\n\tat android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:267)\n\tat android.os.MessageQueue.nativePollOnce(Native Method)\n\tat android.os.MessageQueue.next(MessageQueue.java:335)\n\tat android.os.Looper.loopOnce(Looper.java:161)\n\tat android.os.Looper.loop(Looper.java:288)\n\tat android.app.ActivityThread.main(ActivityThread.java:7924)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)\n\tSuppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [androidx.compose.ui.platform.MotionDurationScaleImpl@84450c8, androidx.compose.runtime.BroadcastFrameClock@8638561, StandaloneCoroutine{Cancelling}@f098886, AndroidUiDispatcher@c4c2547]"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 536,
+        "tid": 10058,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "DropBoxManagerService",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 70000000
+        }
+      },
+      "message": "add tag\u003ddata_app_crash isTagEnabled\u003dtrue flags\u003d0x2"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 2399,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "ActivityTaskManager",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 71000000
+        }
+      },
+      "message": "  Force finishing activity com.example.parkingapp/.MainActivity"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 536,
+        "tid": 559,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "ActivityManager",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 95000000
+        }
+      },
+      "message": "Showing crash dialog for package com.example.parkingapp u0"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 569,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "BroadcastQueue",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 100000000
+        }
+      },
+      "message": "Background execution not allowed: receiving Intent { act\u003dandroid.intent.action.DROPBOX_ENTRY_ADDED flg\u003d0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 569,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "BroadcastQueue",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 101000000
+        }
+      },
+      "message": "Background execution not allowed: receiving Intent { act\u003dandroid.intent.action.DROPBOX_ENTRY_ADDED flg\u003d0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 1636,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "Parcel",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 116000000
+        }
+      },
+      "message": "Expecting binder but got null!"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 559,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CoreBackPreview",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 120000000
+        }
+      },
+      "message": "Window{c1b3367 u0 Application Error: com.example.parkingapp}: Setting back callback OnBackInvokedCallbackInfo{mCallback\u003dandroid.window.WindowOnBackInvokedDispatcher$OnBackInvokedCallbackWrapper@e32c8fe, mPriority\u003d0}"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 135000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d10.49ms min\u003d3.75ms max\u003d26.03ms count\u003d59"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 971,
+        "tid": 982,
+        "applicationId": "com.android.systemui",
+        "processName": "com.android.systemui",
+        "tag": "ndroid.systemui",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 217000000
+        }
+      },
+      "message": "NativeAlloc concurrent copying GC freed 229779(10MB) AllocSpace objects, 54(1080KB) LOS objects, 49% free, 16MB/32MB, paused 588us,65us total 116.943ms"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "WorkerManager",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 288000000
+        }
+      },
+      "message": "dispose()"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 289000000
+        }
+      },
+      "message": "Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small."
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 559,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "Looper",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 447000000
+        }
+      },
+      "message": "Slow dispatch took 324ms android.ui h\u003dandroid.view.Choreographer$FrameHandler c\u003dandroid.view.Choreographer$FrameDisplayEventReceiver@39f1064 m\u003d0"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 559,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "Looper",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 451000000
+        }
+      },
+      "message": "Slow delivery took 330ms android.ui h\u003dcom.android.server.wm.DisplayPolicy$PolicyHandler c\u003dcom.android.server.wm.DisplayPolicy$$ExternalSyntheticLambda13@8a8bedc m\u003d0"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 559,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "Looper",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 526000000
+        }
+      },
+      "message": "Drained"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 561,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "ActivityTaskManager",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 573000000
+        }
+      },
+      "message": "Activity top resumed state loss timeout for ActivityRecord{6c38592 u0 com.example.parkingapp/.MainActivity} t25 f}}"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 561,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "ActivityTaskManager",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 594000000
+        }
+      },
+      "message": "Activity pause timeout for ActivityRecord{6c38592 u0 com.example.parkingapp/.MainActivity} t25 f}}"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "MainContentCaptureSession",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 600000000
+        }
+      },
+      "message": "Flushing 1 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state\u003d2 (ACTIVE), disabled\u003dfalse], reason\u003dFULL"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 1950,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "AppSearchIcing",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 619000000
+        }
+      },
+      "message": "icing-search-engine.cc:217: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found."
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 2409,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "OneSearchSuggestProvider",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 628000000
+        }
+      },
+      "message": "Created the binder channel successfully for end point service \u003dcom.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel\u003dQ0{delegate\u003dL0{logId\u003d77, target\u003ddirectaddress:///AndroidComponentAddress%5BIntent%20%7B%20act\u003dgrpc.io.action.BIND%20cmp\u003dcom.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection\u003dy1.J@c6d9dda"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1916,
+        "tid": 2274,
+        "applicationId": "com.google.android.as",
+        "processName": "com.google.android.as",
+        "tag": "AiAiEcho",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 653000000
+        }
+      },
+      "message": "Predicting[0]: "
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1916,
+        "tid": 2274,
+        "applicationId": "com.google.android.as",
+        "processName": "com.google.android.as",
+        "tag": "AiAiEcho",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 654000000
+        }
+      },
+      "message": "Ranked targets strategy: SORT, count: 0, ranking metadata: "
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1916,
+        "tid": 2274,
+        "applicationId": "com.google.android.as",
+        "processName": "com.google.android.as",
+        "tag": "AiAiEcho",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 698000000
+        }
+      },
+      "message": "#postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2068,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 700000000
+        }
+      },
+      "message": "Created gRPC endpoint to \"search\" for service class com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1916,
+        "tid": 2274,
+        "applicationId": "com.google.android.as",
+        "processName": "com.google.android.as",
+        "tag": "AiAiEcho",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 701000000
+        }
+      },
+      "message": "#postPredictionTargets: Sending updates to UISurface home with targets# 0"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 708000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32e9350"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 708000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32ec7d0"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 708000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32ec7d0"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 708000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32e9350"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 720000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 723000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 2068,
+        "tid": 2525,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "CorpusConfigHelper",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 726000000
+        }
+      },
+      "message": "Invalid input from icing corpus JSON flag.\nandroid.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2\n\tat android.util.JsonReader.syntaxError(JsonReader.java:1162)\n\tat android.util.JsonReader.checkLenient(JsonReader.java:840)\n\tat android.util.JsonReader.nextInArray(JsonReader.java:615)\n\tat android.util.JsonReader.peek(JsonReader.java:345)\n\tat android.util.JsonReader.hasNext(JsonReader.java:321)\n\tat com.google.android.apps.gsa.searchbox.c.b.b.k.c(PG:7)\n\tat com.google.android.apps.gsa.searchbox.c.b.b.k.\u003cinit\u003e(PG:5)\n\tat com.google.android.apps.gsa.staticplugins.searchboxroot.features.n.a.c.\u003cinit\u003e(PG:16)\n\tat com.google.android.apps.gsa.staticplugins.searchboxroot.b.a(PG:14)\n\tat com.google.android.apps.gsa.staticplugins.searchboxroot.x.\u003cinit\u003e(PG:7)\n\tat com.google.android.apps.gsa.binaries.velvet.app.akd.b(PG:15)\n\tat dagger.a.e.b(PG:1)\n\tat com.google.android.apps.gsa.staticplugins.searchboxroot.a.a.a(PG:3)\n\tat com.google.android.apps.gsa.binaries.velvet.app.ok.f(Unknown Source:2541)\n\tat com.google.android.apps.gsa.binaries.velvet.app.ok.b(PG:1)\n\tat com.google.android.apps.gsa.search.core.service.g.a.c.a(PG:2)\n\tat com.google.android.libraries.gsa.k.a.f.a(PG:2)\n\tat com.google.common.util.concurrent.dx.a(PG:1)\n\tat com.google.common.util.concurrent.cv.run(PG:4)\n\tat com.google.common.util.concurrent.dz.run(PG:1)\n\tat com.google.android.libraries.i.ae.run(PG:1)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)\n\tat com.google.android.libraries.i.k.run(PG:2)\n\tat com.google.android.libraries.i.p.run(PG:4)\n\tat java.lang.Thread.run(Thread.java:1012)"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1189,
+        "tid": 1515,
+        "applicationId": "com.google.android.bluetooth",
+        "processName": "com.google.android.bluetooth",
+        "tag": "BtGatt.ScanManager",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 732000000
+        }
+      },
+      "message": "uid 10119 isForeground true scanMode -1"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1189,
+        "tid": 1515,
+        "applicationId": "com.google.android.bluetooth",
+        "processName": "com.google.android.bluetooth",
+        "tag": "BtGatt.ScanManager",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 732000000
+        }
+      },
+      "message": "uid 10119 isForeground true scanMode -1"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 733000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 734000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 735000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 735000000
+        }
+      },
+      "message": "Merging legacy hotword config map with new proto."
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 743000000
+        }
+      },
+      "message": "Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 743000000
+        }
+      },
+      "message": "Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 743000000
+        }
+      },
+      "message": "Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 743000000
+        }
+      },
+      "message": "Skipping. Expected model: 2 Found: 1"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 743000000
+        }
+      },
+      "message": "Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 744000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 745000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 745000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 8154,
+        "tid": 8199,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms",
+        "tag": "Icing",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 768000000
+        }
+      },
+      "message": "IndexChimeraService.getServiceInterface callingPackage\u003dcom.google.android.googlequicksearchbox componentName\u003dnull serviceId\u003d36"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 6135,
+        "tid": 6135,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms.persistent",
+        "tag": "BoundBrokerSvc",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 776000000
+        }
+      },
+      "message": "onBind: Intent { act\u003dcom.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat\u003dchimera-action:/... cmp\u003dcom.google.android.gms/.chimera.PersistentApiService }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 6135,
+        "tid": 6135,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms.persistent",
+        "tag": "BoundBrokerSvc",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 776000000
+        }
+      },
+      "message": "Loading bound service for intent: Intent { act\u003dcom.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat\u003dchimera-action:/... cmp\u003dcom.google.android.gms/.chimera.PersistentApiService }"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "MicroDetectionState",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 787000000
+        }
+      },
+      "message": "Should stop hotword detection immediately - true"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "MicroDetectionState",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 791000000
+        }
+      },
+      "message": "Should stop hotword detection immediately - true"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 791000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 8154,
+        "tid": 8154,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms",
+        "tag": "BoundBrokerSvc",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 791000000
+        }
+      },
+      "message": "onBind: Intent { act\u003dcom.google.android.gms.feedback.internal.IFeedbackService dat\u003dchimera-action:/... cmp\u003dcom.google.android.gms/.chimera.GmsBoundBrokerService }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 8154,
+        "tid": 8154,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms",
+        "tag": "BoundBrokerSvc",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 791000000
+        }
+      },
+      "message": "Loading bound service for intent: Intent { act\u003dcom.google.android.gms.feedback.internal.IFeedbackService dat\u003dchimera-action:/... cmp\u003dcom.google.android.gms/.chimera.GmsBoundBrokerService }"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 2068,
+        "tid": 2775,
+        "applicationId": "com.google.android.googlequicksearchbox",
+        "processName": "com.google.android.googlequicksearchbox:search",
+        "tag": "A",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 791000000
+        }
+      },
+      "message": "Using proto config with mendel"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 2401,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CompatibilityChangeReporter",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 824000000
+        }
+      },
+      "message": "Compat change id reported: 161252188; UID 10174; state: DISABLED"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 8154,
+        "tid": 8206,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms",
+        "tag": "Icing",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 827000000
+        }
+      },
+      "message": "Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 8154,
+        "tid": 8199,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms",
+        "tag": "Icing",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 838000000
+        }
+      },
+      "message": "IndexChimeraService.getServiceInterface callingPackage\u003dcom.google.android.gms componentName\u003dnull serviceId\u003d30"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 8154,
+        "tid": 8206,
+        "applicationId": "com.google.android.gms",
+        "processName": "com.google.android.gms",
+        "tag": "Icing",
+        "timestamp": {
+          "seconds": 1747666185,
+          "nanos": 852000000
+        }
+      },
+      "message": "Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666186,
+          "nanos": 141000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d11.21ms min\u003d3.62ms max\u003d41.66ms count\u003d51"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 10026,
+        "tid": 10045,
+        "applicationId": "com.example.parkingapp",
+        "processName": "com.example.parkingapp",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666187,
+          "nanos": 155000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d11.31ms min\u003d3.55ms max\u003d28.51ms count\u003d56"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666187,
+          "nanos": 868000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_DOWN, actionButton\u003d0, id[0]\u003d0, x[0]\u003d459.9756, y[0]\u003d1322.8912, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16007797, downTime\u003d16007797, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d205667542 }"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 1264,
+        "tid": 1264,
+        "applicationId": "com.google.android.apps.nexuslauncher",
+        "processName": "com.google.android.apps.nexuslauncher",
+        "tag": "TaplEvents",
+        "timestamp": {
+          "seconds": 1747666187,
+          "nanos": 962000000
+        }
+      },
+      "message": "TIS / TouchInteractionService.onInputEvent: MotionEvent { action\u003dACTION_UP, actionButton\u003d0, id[0]\u003d0, x[0]\u003d463.96362, y[0]\u003d1322.8912, toolType[0]\u003dTOOL_TYPE_FINGER, buttonState\u003d0, classification\u003dNONE, metaState\u003d0, flags\u003d0x0, edgeFlags\u003d0x0, pointerCount\u003d1, historySize\u003d0, eventTime\u003d16007891, downTime\u003d16007797, deviceId\u003d4, source\u003d0x5002, displayId\u003d0, eventId\u003d1033670150 }"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 24000000
+        }
+      },
+      "message": "Could not find layer id -1"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 1636,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "EGL_emulation",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 78000000
+        }
+      },
+      "message": "app_time_stats: avg\u003d257.34ms min\u003d4.00ms max\u003d2392.82ms count\u003d10"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 559,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "Looper",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 78000000
+        }
+      },
+      "message": "Slow dispatch took 188ms android.ui h\u003dandroid.view.Choreographer$FrameHandler c\u003dandroid.view.Choreographer$FrameDisplayEventReceiver@39f1064 m\u003d0"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 559,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "CoreBackPreview",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 131000000
+        }
+      },
+      "message": "Window{c1b3367 u0 Application Error: com.example.parkingapp}: Setting back callback null"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 2399,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "WindowManager",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 137000000
+        }
+      },
+      "message": "  Force finishing activity com.example.parkingapp/.MainActivity"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 536,
+        "tid": 2399,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "ActivityManager",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 138000000
+        }
+      },
+      "message": "Killing 10026:com.example.parkingapp/u0a174 (adj 900): crash"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 536,
+        "tid": 571,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "libprocessgroup",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 150000000
+        }
+      },
+      "message": "Successfully killed process cgroup uid 10174 pid 10026 in 11ms"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 0,
+        "tid": 0,
+        "applicationId": "",
+        "processName": "",
+        "tag": "",
+        "timestamp": {
+          "seconds": 0,
+          "nanos": 0
+        }
+      },
+      "message": "---------------------------- PROCESS ENDED (10026) for package com.example.parkingapp ----------------------------"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 562,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "InputManager-JNI",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 160000000
+        }
+      },
+      "message": "Input channel object \u002787085a8 com.example.parkingapp/com.example.parkingapp.MainActivity (client)\u0027 was disposed without first being removed with the input manager!"
+    },
+    {
+      "header": {
+        "logLevel": "VERBOSE",
+        "pid": 536,
+        "tid": 2399,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "ActivityManager",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 172000000
+        }
+      },
+      "message": "Got obituary of 10026:com.example.parkingapp"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 311,
+        "tid": 311,
+        "applicationId": "pid-311",
+        "processName": "pid-311",
+        "tag": "Zygote",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 175000000
+        }
+      },
+      "message": "Process 10026 exited due to signal 9 (Killed)"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 0,
+        "tid": 0,
+        "applicationId": "kernel",
+        "processName": "kernel",
+        "tag": "binder",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 162000000
+        }
+      },
+      "message": "undelivered TRANSACTION_COMPLETE"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 0,
+        "tid": 0,
+        "applicationId": "kernel",
+        "processName": "kernel",
+        "tag": "binder",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 164000000
+        }
+      },
+      "message": "undelivered transaction 1161507, process died."
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 0,
+        "tid": 0,
+        "applicationId": "kernel",
+        "processName": "kernel",
+        "tag": "binder",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 165000000
+        }
+      },
+      "message": "undelivered transaction 1161534, process died."
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 561,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "ActivityManager",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 176000000
+        }
+      },
+      "message": "setHasOverlayUi called on unknown pid: 10026"
+    },
+    {
+      "header": {
+        "logLevel": "DEBUG",
+        "pid": 536,
+        "tid": 1636,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "OpenGLRenderer",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 177000000
+        }
+      },
+      "message": "endAllActiveAnimators on 0x78032f7471c0 (RippleDrawable) with handle 0x78023f8597b0"
+    },
+    {
+      "header": {
+        "logLevel": "ERROR",
+        "pid": 380,
+        "tid": 380,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "BpTransactionCompletedListener",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 178000000
+        }
+      },
+      "message": "Failed to transact (-32)"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 536,
+        "tid": 559,
+        "applicationId": "system_process",
+        "processName": "system_process",
+        "tag": "InputManager-JNI",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 180000000
+        }
+      },
+      "message": "Input channel object \u0027c1b3367 Application Error: com.example.parkingapp (client)\u0027 was disposed without first being removed with the input manager!"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 204000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32e5c30"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 205000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32ea430"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1825,
+        "tid": 1825,
+        "applicationId": "com.google.android.inputmethod.latin",
+        "processName": "com.google.android.inputmethod.latin",
+        "tag": "GoogleInputMethodService",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 209000000
+        }
+      },
+      "message": "GoogleInputMethodService.onFinishInput():3227 "
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1825,
+        "tid": 1825,
+        "applicationId": "com.google.android.inputmethod.latin",
+        "processName": "com.google.android.inputmethod.latin",
+        "tag": "GoogleInputMethodService",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 210000000
+        }
+      },
+      "message": "GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes \u003d 0, unlocked \u003d true"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1825,
+        "tid": 1825,
+        "applicationId": "com.google.android.inputmethod.latin",
+        "processName": "com.google.android.inputmethod.latin",
+        "tag": "GoogleInputMethodService",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 210000000
+        }
+      },
+      "message": "GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType\u003d0x0(NULL) imeOptions\u003d0x0 privateImeOptions\u003dnull actionName\u003dUNSPECIFIED actionLabel\u003dnull actionId\u003d0 initialSelStart\u003d-1 initialSelEnd\u003d-1 initialCapsMode\u003d0x0 hintText\u003dnull label\u003dnull packageName\u003dcom.google.android.apps.nexuslauncher fieldId\u003d-1 fieldName\u003dnull extras\u003dnull}, false)"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1825,
+        "tid": 1825,
+        "applicationId": "com.google.android.inputmethod.latin",
+        "processName": "com.google.android.inputmethod.latin",
+        "tag": "GoogleInputMethodService",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 210000000
+        }
+      },
+      "message": "GoogleInputMethodService.shouldHideHeaderOnInitialState():4008 ShouldHideHeaderOnInitialState \u003d false"
+    },
+    {
+      "header": {
+        "logLevel": "INFO",
+        "pid": 1825,
+        "tid": 1825,
+        "applicationId": "com.google.android.inputmethod.latin",
+        "processName": "com.google.android.inputmethod.latin",
+        "tag": "GoogleInputMethodService",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 212000000
+        }
+      },
+      "message": "GoogleInputMethodService.updateDeviceLockedStatus():2087 repeatCheckTimes \u003d 2, unlocked \u003d true"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 374000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32ed3d0"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 374000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32e8570"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 374000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32ec0b0"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 374000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32e9050"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 375000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32e77f0"
+    },
+    {
+      "header": {
+        "logLevel": "WARN",
+        "pid": 380,
+        "tid": 401,
+        "applicationId": "surfaceflinger",
+        "processName": "surfaceflinger",
+        "tag": "TransactionTracing",
+        "timestamp": {
+          "seconds": 1747666188,
+          "nanos": 375000000
+        }
+      },
+      "message": "Could not find layer handle 0x77b3a32ecb30"
+    }
+  ]
+}
