@@ -1,5 +1,6 @@
 package com.example.parkingapp.screens.mypage
 
+import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -8,14 +9,14 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.parkingapp.components.ReservationStatusControl
 import com.example.parkingapp.components.TopBar
 import com.example.parkingapp.viewmodel.ParkingListViewModel
-import com.example.parkingapp.ui.theme.formatContinuousTime
 import com.example.parkingapp.viewmodel.AuthViewModel
-
 
 @Composable
 fun MyPageScreen(
@@ -24,14 +25,19 @@ fun MyPageScreen(
     onBack: () -> Unit,
     navController: NavController
 ) {
-    LaunchedEffect(Unit) {
-        viewModel.fetchMyReservations()
-    }
+
 
     val context = LocalContext.current
-    val reservations = viewModel.reservationHistory.collectAsState()
+    val reservations by viewModel.reservationHistory.collectAsState()
     var showDialog by remember { mutableStateOf(false) }
-    var selectedReservationId by remember { mutableStateOf<Int?>(null) }
+    var selectedReservationId by remember { mutableStateOf<Long?>(null) }
+
+    LaunchedEffect(navController.currentBackStackEntry) {
+        viewModel.fetchMyReservations()
+    }
+    LaunchedEffect(reservations) {
+        Log.d("MyPage", "🔥 예약 목록 변경됨: ${reservations.map { it.status to it.isSlotOpened }}")
+    }
 
     Scaffold(
         topBar = { TopBar(title = "예약 내역", showBack = true, onBackClick = onBack) }
@@ -42,7 +48,6 @@ fun MyPageScreen(
                 .padding(innerPadding)
                 .fillMaxSize()
         ) {
-            // ✅ 로그아웃 버튼
             Button(
                 onClick = {
                     authViewModel.logout()
@@ -58,7 +63,6 @@ fun MyPageScreen(
                 Text("로그아웃")
             }
 
-            // ✅ 예약 리스트
             LazyColumn(
                 contentPadding = PaddingValues(16.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp),
@@ -67,18 +71,29 @@ fun MyPageScreen(
                     .fillMaxWidth()
                     .weight(1f)
             ) {
-                items(reservations.value) { reservation ->
-                    val isParking = reservation.isOngoing
-                    val statusLabel = if (isParking) "주차중" else "주차가능"
+                items(reservations) { reservation ->
+
+                    val statusLabel = when (reservation.status) {
+                        "RESERVED" -> "예약 대기"
+                        "ACTIVE" -> "예약 활성"
+                        "CANCELLED" -> "취소됨"
+                        "COMPLETED" -> "완료됨"
+                        else -> "알 수 없음"
+                    }
+
+                    val isActive = reservation.status == "ACTIVE"
+                    val isSlotOpened = reservation.isSlotOpened
+                    Log.d("MyPageScreen", "🚧 Reservation ${reservation.id}: isSlotOpened = $isSlotOpened")
+
 
                     Card(
                         modifier = Modifier.fillMaxWidth(),
                         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
                     ) {
                         Column(modifier = Modifier.padding(16.dp)) {
-                            Text("주차장: ${reservation.parking.name}", style = MaterialTheme.typography.titleMedium)
-                            Text("주소: ${reservation.parking.distance}", style = MaterialTheme.typography.bodyMedium)
-                            Text("시간: ${formatContinuousTime(reservation.timeSlots)}", style = MaterialTheme.typography.bodyMedium)
+                            Text("주차장: ${reservation.parkingLotName}", style = MaterialTheme.typography.titleMedium)
+                            Text("슬롯 번호: ${reservation.slotNumber}", style = MaterialTheme.typography.bodyMedium)
+                            Text("시간: ${reservation.startTime} ~ ${reservation.endTime}", style = MaterialTheme.typography.bodyMedium)
                             Text("상태: $statusLabel", style = MaterialTheme.typography.bodyMedium)
 
                             Spacer(modifier = Modifier.height(16.dp))
@@ -101,33 +116,38 @@ fun MyPageScreen(
                                     Text("예약 취소")
                                 }
 
-                                if (!isParking) {
-                                    Button(
-                                        onClick = {
-                                            navController.navigate("notice/${reservation.id}/${reservation.slotId}")
-                                        },
-                                        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
-                                    ) {
-                                        Text("주차 시작")
+                                if (isActive) {
+
+                                    if (isSlotOpened) {
+                                        Button(onClick = { navController.navigate("exitNotice/${reservation.id}/${reservation.slotId}") }) {
+                                            Text("주차 종료")
+                                        }
+                                    } else {
+                                        Button(onClick = { navController.navigate("notice/${reservation.id}/${reservation.slotId}") }) {
+                                            Text("주차 시작")
+                                        }
                                     }
                                 } else {
                                     Button(
-                                        onClick = {
-                                            navController.navigate("exitNotice/${reservation.id}")
-                                        },
-                                        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+                                        onClick = {},
+                                        enabled = false,
+                                        colors = ButtonDefaults.buttonColors(containerColor = Color.Gray)
                                     ) {
-                                        Text("주차 종료")
+                                        Text("")
                                     }
                                 }
                             }
+
+                            ReservationStatusControl(
+                                reservationId = reservation.id.toLong(),
+                                viewModel = viewModel  // ParkingListViewModel
+                            )
                         }
                     }
                 }
             }
         }
 
-        // ✅ 예약 취소 다이얼로그
         if (showDialog && selectedReservationId != null) {
             AlertDialog(
                 onDismissRequest = { showDialog = false },

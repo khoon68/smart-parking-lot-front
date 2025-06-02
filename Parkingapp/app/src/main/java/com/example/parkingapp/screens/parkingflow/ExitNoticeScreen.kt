@@ -6,12 +6,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.example.parkingapp.components.TopBar
 
 @Composable
 fun ExitNoticeScreen(
-    onProceed: () -> Unit,
-    onBack: () -> Unit
+    reservationId: Long,
+    slotId: Long,
+    onBack: () -> Unit,
+    navController: NavController
 ) {
     Scaffold(
         topBar = { TopBar(title = "출차 전 주의사항", showBack = true, onBackClick = onBack) }
@@ -33,7 +36,9 @@ fun ExitNoticeScreen(
             Spacer(modifier = Modifier.weight(1f))
 
             Button(
-                onClick = onProceed,
+                onClick = {
+                    navController.navigate("gateClose/$reservationId/$slotId") // ✅ slotId 포함
+                },
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Text("차단기 닫기 화면으로 이동")

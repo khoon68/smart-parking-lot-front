@@ -1,5 +1,6 @@
 package com.example.parkingapp.screens.reservation
 
+import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
@@ -11,7 +12,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.Dp
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.navigation.NavController
 import com.example.parkingapp.components.TopBar
@@ -36,18 +36,15 @@ fun SlotSelectionScreen(
     val scope = rememberCoroutineScope()
     var slots by remember { mutableStateOf<List<ParkingSlotDTO>>(emptyList()) }
     var selectedSlotId by remember { mutableStateOf<Long?>(null) }
+    var selectedSlotNumber by remember { mutableStateOf<Int?>(null) }
 
-    val testSlots = listOf(
-        ParkingSlotDTO(id = 1, slotNumber = 1, available = true, opened = false),
-        ParkingSlotDTO(id = 2, slotNumber = 2, available = false, opened = false),
-        ParkingSlotDTO(id = 3, slotNumber = 3, available = true, opened = true)
-    )
-
+    // ✅ 슬롯 목록 불러오기
     LaunchedEffect(Unit) {
         scope.launch {
             try {
-                // val response = RetrofitInstance.create(context).getAvailableSlots(parkingLotId, date, timeSlots)
-                slots = testSlots
+                val response = RetrofitInstance.create(context)
+                    .getAvailableSlots(parkingLotId, date, timeSlots)
+                slots = response
             } catch (e: Exception) {
                 Toast.makeText(context, "슬롯 불러오기 실패: ${e.message}", Toast.LENGTH_SHORT).show()
             }
@@ -80,7 +77,10 @@ fun SlotSelectionScreen(
                     items(slots) { slot ->
                         val isSelected = slot.id == selectedSlotId
                         Button(
-                            onClick = { selectedSlotId = slot.id },
+                            onClick = {
+                                selectedSlotId = slot.id
+                                selectedSlotNumber = slot.slotNumber
+                            },
                             enabled = slot.available,
                             shape = RoundedCornerShape(12.dp),
                             colors = ButtonDefaults.buttonColors(
@@ -92,10 +92,9 @@ fun SlotSelectionScreen(
                             ),
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .height(180.dp) // 직사각형 형태
-
+                                .height(100.dp)
                         ) {
-                            Text("슬롯 ${slot.slotNumber}")
+                            Text("슬롯 ${slot.slotNumber}${if (isSelected) " ✅" else ""}")
                         }
                     }
                 }
@@ -104,39 +103,55 @@ fun SlotSelectionScreen(
 
                 Button(
                     onClick = {
-                        if (selectedSlotId == null) {
+                        if (selectedSlotId == null || selectedSlotNumber == null) {
                             Toast.makeText(context, "슬롯을 선택하세요", Toast.LENGTH_SHORT).show()
                             return@Button
                         }
 
                         scope.launch {
                             try {
-                                val response = RetrofitInstance.create(context).createReservation(
-                                    ReservationRequest(
-                                        slotId = selectedSlotId!!,
-                                        timeSlots = timeSlots
-                                    )
+                                val request = ReservationRequest(
+                                    slotId = selectedSlotId!!,
+                                    timeSlots = timeSlots
                                 )
+                                val response = RetrofitInstance.create(context)
+                                    .createReservation(request)
+
                                 if (response.isSuccessful) {
                                     val body = response.body()
-                                    val parking = viewModel.parkingList.value.firstOrNull { it.id == parkingLotId.toInt() }
+                                    val sorted = timeSlots.sorted()
+                                    val startTime = sorted.first()
+                                    val endTime = sorted.lastOrNull()?.let {
+                                        val hour = it.substringBefore(":").toIntOrNull() ?: 0
+                                        String.format("%02d:00", (hour + 1) % 24)
+                                    } ?: startTime
+
+                                    val parking = viewModel.parkingList.value.firstOrNull {
+                                        it.id == parkingLotId.toInt()
+                                    }
                                     if (body != null && parking != null) {
                                         val reservation = Reservation(
                                             id = body.reservationId,
-                                            parking = parking,
-                                            timeSlots = timeSlots,
+                                            parkingLotName = parking.name,
+                                            slotId = body.slotId,
+                                            slotNumber = selectedSlotNumber!!,
+                                            startTime = startTime,
+                                            endTime = endTime,
                                             totalPrice = body.totalPrice,
-                                            isOngoing = false,
-                                            slotId = selectedSlotId!!
+                                            status = body.status,
+                                            isSlotOpened = body.status == "ACTIVE"
                                         )
-                                        navController.currentBackStackEntry?.savedStateHandle?.set("pendingReservation", reservation)
+
+                                        navController.currentBackStackEntry?.savedStateHandle?.set(
+                                            "pendingReservation", reservation
+                                        )
                                         navController.navigate("payment")
                                     }
                                 } else {
                                     Toast.makeText(context, "예약 실패: ${response.code()}", Toast.LENGTH_SHORT).show()
                                 }
                             } catch (e: Exception) {
-                                Toast.makeText(context, "오류 발생: ${e.message}", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(context, "오류: ${e.message}", Toast.LENGTH_SHORT).show()
                             }
                         }
                     },

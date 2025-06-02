@@ -1,7 +1,7 @@
 package com.example.parkingapp.data.dto
 
 data class UserInfoResponse(
-    val id: Int,
+    val id: Long,
     val username: String,
     val role: String
 )

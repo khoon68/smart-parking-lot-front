@@ -91,7 +91,7 @@ fun ReservationScreen(
                                 .padding(12.dp)
                         ) {
                             Text(
-                                text = slot.label(),
+                                text = "${slot.startTime} - ${slot.endTime}",
                                 fontWeight = FontWeight.Bold,
                                 fontSize = 13.sp,
                                 color = if (isDisabled) Color.DarkGray else Color.Black

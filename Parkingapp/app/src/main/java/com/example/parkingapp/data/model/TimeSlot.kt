@@ -5,7 +5,7 @@ data class TimeSlot(
     val endTime: String,       // "10:00"
     val price: Int = 3000
 ) {
-    fun label(): String = "$startTime~$endTime"
+    fun label(): String = startTime
 
     // ✅ 주차장 가격 기반으로 새로운 TimeSlot 복사 생성
     fun copyWithPrice(newPrice: Int): TimeSlot {

@@ -16,7 +16,7 @@ import com.example.parkingapp.components.TopBar
 
 @Composable
 fun GateCloseScreen(
-    reservationId: Int,
+    reservationId: Long,
     slotId: Long, // ✅ 추가: 서버로 보낼 슬롯 ID
     navController: NavController,
     viewModel: ParkingListViewModel,

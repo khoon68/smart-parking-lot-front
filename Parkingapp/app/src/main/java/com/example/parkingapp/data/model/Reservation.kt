@@ -5,11 +5,13 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Reservation(
-    val id: Int,
-    val parking: ParkingLot,
-    val timeSlots: List<String>,
+    val id: Long,
+    val parkingLotName: String,
+    val slotId: Long,
+    val slotNumber: Int,
+    val startTime: String,
+    val endTime: String,
     val totalPrice: Int,
-    val isOngoing: Boolean = false,
-    val slotId: Long
+    val status: String,
+    val isSlotOpened: Boolean
 ) : Parcelable
-

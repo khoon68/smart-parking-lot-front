@@ -10,6 +10,6 @@ data class ParkingLot(
     val distance: Int,
     val pricePerHour: Int,
     val availableSlots: Int,
-    val isAvailable: Boolean = false,
+    val isAvailable: Boolean,
     val imageUrl: String? = null
 ) : Parcelable

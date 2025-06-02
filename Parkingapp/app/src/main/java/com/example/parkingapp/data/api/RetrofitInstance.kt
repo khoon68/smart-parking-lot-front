@@ -7,7 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance {
-    private const val BASE_URL = "http://10.0.2.2:8080/"
+    private const val BASE_URL = "http://52.87.44.21:8080/"
 
     fun create(context: Context): ParkingApi {
         val preferences = UserPreferences(context)

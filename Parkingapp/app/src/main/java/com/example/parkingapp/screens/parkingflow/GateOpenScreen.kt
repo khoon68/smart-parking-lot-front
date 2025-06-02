@@ -14,7 +14,7 @@ import com.example.parkingapp.viewmodel.ParkingListViewModel
 
 @Composable
 fun GateOpenScreen(
-    reservationId: Int,
+    reservationId: Long,
     navController: NavController,
     viewModel: ParkingListViewModel,
     onBack: () -> Unit,
@@ -60,6 +60,7 @@ fun GateOpenScreen(
                         reservationId = reservationId,
                         slotId = slotId,
                         onSuccess = {
+                            viewModel.fetchMyReservations()
                             navController.navigate("list") {
                                 popUpTo("list") { inclusive = true }
                             }

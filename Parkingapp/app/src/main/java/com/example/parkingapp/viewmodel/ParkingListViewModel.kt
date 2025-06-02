@@ -1,6 +1,7 @@
 package com.example.parkingapp.viewmodel
 
 import android.content.Context
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.parkingapp.data.api.RetrofitInstance
@@ -8,11 +9,12 @@ import com.example.parkingapp.data.dto.BarrierOpenRequest
 import com.example.parkingapp.data.model.ParkingLot
 import com.example.parkingapp.data.model.Reservation
 import com.example.parkingapp.data.model.TimeSlot
+import com.example.parkingapp.repository.ParkingLotRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
-class ParkingListViewModel(context: Context) : ViewModel() {
+class ParkingListViewModel(context: Context, private val repository: ParkingLotRepository) : ViewModel() {
 
     private val appContext = context.applicationContext
     private val api = RetrofitInstance.create(context)
@@ -20,101 +22,81 @@ class ParkingListViewModel(context: Context) : ViewModel() {
     private val _parkingList = MutableStateFlow<List<ParkingLot>>(emptyList())
     val parkingList: StateFlow<List<ParkingLot>> = _parkingList
 
-    private val _reservationHistory = MutableStateFlow<List<Reservation>>(emptyList())  // ✅ 선언 다시 추가
+    private val _reservationHistory = MutableStateFlow<List<Reservation>>(emptyList())
     val reservationHistory: StateFlow<List<Reservation>> = _reservationHistory
 
     init {
         fetchParkingLots()
-
-        // ✅ 테스트용 주차장 더미 데이터
-        _parkingList.value = listOf(
-            ParkingLot(
-                id = 1,
-                name = "테스트 주차장 A",
-                distance = 150,
-                pricePerHour = 2000,
-                availableSlots = 4,
-                isAvailable = true
-            ),
-            ParkingLot(
-                id = 2,
-                name = "테스트 주차장 B",
-                distance = 300,
-                pricePerHour = 2500,
-                availableSlots = 2,
-                isAvailable = false
-            )
-        )
-        // ✅ 서버 없이 테스트 예약 데이터
-        _reservationHistory.value = listOf(
-            Reservation(
-                id = 999,
-                parking = ParkingLot(
-                    id = 1,
-                    name = "테스트 주차장",
-                    distance = 100,
-                    pricePerHour = 2000,
-                    availableSlots = 3,
-                    isAvailable = true
-                ),
-                timeSlots = listOf("09:00", "10:00", "11:00"),
-                totalPrice = 6000,
-                isOngoing = false,
-                slotId = 1L
-            )
-        )
+        Log.d("fetched", "주차장 목록 불러옴")
     }
+
+    /** 주차장 목록 새로 불러오기 */
+    fun loadParkingLots() {
+        viewModelScope.launch {
+            _parkingList.value = repository.getParkingLots()
+        }
+    }
+
+    /** 서버에 예약 취소 요청 후 로컬 상태에서도 제거 */
     fun cancelReservationFromServer(
-        reservationId: Int,
+        reservationId: Long,
         onSuccess: () -> Unit,
         onFailure: (String) -> Unit
     ) {
         viewModelScope.launch {
             try {
-                val response = RetrofitInstance.create(appContext).cancelReservation(reservationId.toLong())
+                val response = api.cancelReservation(reservationId.toLong())
                 if (response.isSuccessful) {
-                    cancelReservation(reservationId)  // ✅ 내부 리스트에서 제거
+                    _reservationHistory.value = _reservationHistory.value.map {
+                        if (it.id == reservationId) it.copy(status = "CANCELLED") else it
+                    }
                     onSuccess()
                 } else {
-                    onFailure("서버 오류: ${response.code()}")
+                    onFailure("서버 오류: \${response.code()}")
                 }
             } catch (e: Exception) {
-                onFailure("네트워크 오류: ${e.message}")
+                onFailure("네트워크 오류: \${e.message}")
             }
         }
     }
 
+    /** 내 예약 목록을 서버에서 조회 */
     fun fetchMyReservations() {
         viewModelScope.launch {
             try {
-                val response = RetrofitInstance.create(appContext).getMyReservations()
+                val response = api.getMyReservations()
                 val parsed = response.map {
                     Reservation(
                         id = it.reservationId,
-                        parking = ParkingLot(  // 서버 응답에 위치/요금/이미지 없음 → 일부 더미값 사용
-                            id = 0,
-                            name = it.parkingLotName,
-                            distance = 0,
-                            pricePerHour = 0,
-                            availableSlots = 0
-                        ),
-                        timeSlots = listOf("${it.startTime}~${it.endTime}"),
+                        parkingLotName = it.parkingLotName,
+                        slotId = it.slotId,
+                        slotNumber = it.slotNumber,
+                        startTime = it.startTime,
+                        endTime = it.endTime,
                         totalPrice = it.totalPrice,
-                        isOngoing = it.status == "ONGOING",
-                        slotId = 1L
+                        status = it.status,
+                        isSlotOpened = it.isSlotOpened
                     )
                 }
                 _reservationHistory.value = parsed
             } catch (e: Exception) {
-                e.printStackTrace()
+                Log.e("fetchMyReservations", "에러: ${e.message}")
             }
         }
     }
 
+    /** 주차장 목록 조회 */
     fun fetchParkingLots() {
         viewModelScope.launch {
             try {
-                val result = api.getParkingLots()
+                val result = api.getParkingLots().map {
+                    val available = it.availableSlots > 0
+                    Log.d("fetched", "🚗 \${it.name}: slots=\${it.availableSlots}, isAvailable=\$available")
+                    it.copy(
+                        isAvailable = available,
+                        distance = it.distance
+                    )
+                }
                 _parkingList.value = result
             } catch (e: Exception) {
                 e.printStackTrace()
@@ -122,54 +104,49 @@ class ParkingListViewModel(context: Context) : ViewModel() {
         }
     }
 
-    // ✅ 새 예약 추가 함수
-    fun addReservation(reservation: Reservation) {
-        _reservationHistory.value = _reservationHistory.value + reservation
-    }
-    // 예약
-    fun getNextReservationId(): Int {
+    /** 다음 예약 ID 계산 */
+    fun getNextReservationId(): Long {
         return (_reservationHistory.value.maxOfOrNull { it.id } ?: 0) + 1
     }
-    // ✅ 예약 취소 함수
-    fun cancelReservation(reservationId: Int) {
+
+    /** 예약 ID에 해당하는 예약을 로컬 상태에서 제거 */
+    fun cancelReservation(reservationId: Long) {
         _reservationHistory.value = _reservationHistory.value.filterNot {
-            it.id == reservationId || it.isOngoing
+            it.id == reservationId
         }
     }
-    // 전체 사용 가능한 시간 슬롯
+
+    /** 특정 주차장에 대해 전체 시간 슬롯 반환 */
     fun getTimeSlotsForParking(parking: ParkingLot): List<TimeSlot> {
-        return listOf(
-            TimeSlot("08:00", "09:00"),
-            TimeSlot("09:00", "10:00"),
-            TimeSlot("10:00", "11:00"),
-            TimeSlot("11:00", "12:00"),
-            TimeSlot("12:00", "13:00"),
-            TimeSlot("13:00", "14:00")
-        ).map { it.copyWithPrice(parking.pricePerHour) }
-    }
-
-    // 이미 예약된 시간 슬롯 (문자열 기준)
-    fun getReservedTimeSlots(): Set<String> {
-        return reservationHistory.value.flatMap { it.timeSlots }.toSet()
-    }
-
-    // ✅ 주차 시작 처리 (실제 주차장 입차 시 호출)
-    fun markReservationStarted(reservationId: Int) {
-        _reservationHistory.value = _reservationHistory.value.map {
-            if (it.id == reservationId) it.copy(isOngoing = true) else it
+        return (0 until 24).map { hour ->
+            val start = String.format("%02d:00", hour)
+            val end = String.format("%02d:00", (hour + 1) % 24)
+            TimeSlot(startTime = start, endTime = end).copyWithPrice(parking.pricePerHour)
         }
     }
-    // 차단기 오픈
+
+    /** 예약된 시간 슬롯 문자열 집합 반환 */
+    fun getReservedTimeSlots(): Set<String> {
+        return reservationHistory.value.map { "\${it.startTime}~\${it.endTime}" }.toSet()
+    }
+
+    /** 예약 시작 상태 표시 */
+    fun markReservationStarted(reservationId: Long) {
+        _reservationHistory.value = _reservationHistory.value.map {
+            if (it.id == reservationId) it.copy(isSlotOpened = true) else it
+        }
+    }
+
+    /** 차단기 열기 요청 */
     fun openBarrier(
-        reservationId: Int,
+        reservationId: Long,
         slotId: Long,
         onSuccess: () -> Unit,
         onFailure: (String) -> Unit
     ) {
         viewModelScope.launch {
             try {
-                val response = RetrofitInstance.create(appContext).openBarrier(
-                    BarrierOpenRequest(slotId))
+                val response = api.openBarrier(slotId) // 요청 방식 변경
                 if (response.isSuccessful) {
                     markReservationStarted(reservationId)
                     onSuccess()
@@ -181,19 +158,20 @@ class ParkingListViewModel(context: Context) : ViewModel() {
             }
         }
     }
-    // 차단기 클로즈
+
+    /** 차단기 닫기 요청 → 예약 종료 처리 */
     fun closeBarrier(
-        reservationId: Int,
+        reservationId: Long,
         slotId: Long,
         onSuccess: () -> Unit,
         onFailure: (String) -> Unit
     ) {
         viewModelScope.launch {
             try {
-                val response = RetrofitInstance.create(appContext).closeBarrier(BarrierOpenRequest(slotId))
+                val response = api.closeBarrier(slotId)
                 if (response.isSuccessful) {
-                    markReservationEnded(reservationId)
-                    cancelReservation(reservationId)
+                    updateReservationStatusLocally(reservationId, "COMPLETED") // 상태 변경
+                    markReservationEnded(reservationId) // 차단기 닫힘 표시
                     onSuccess()
                 } else {
                     onFailure("출차 실패: ${response.code()}")
@@ -204,10 +182,22 @@ class ParkingListViewModel(context: Context) : ViewModel() {
         }
     }
 
-    // ✅ 주차 종료 처리
-    fun markReservationEnded(reservationId: Int) {
+    /** 예약 종료 상태 표시 */
+    fun markReservationEnded(reservationId: Long) {
         _reservationHistory.value = _reservationHistory.value.map {
-            if (it.id == reservationId) it.copy(isOngoing = false) else it
+            if (it.id == reservationId) it.copy(isSlotOpened = false) else it
         }
     }
+
+    /** 예약 상태 변경 (프론트 반영용) */
+    fun updateReservationStatusLocally(reservationId: Long, newStatus: String) {
+        _reservationHistory.value = _reservationHistory.value.map {
+            if (it.id == reservationId) it.copy(status = newStatus) else it
+        }
+    }
+
+    /** 서버에서 예약을 다시 불러와 덮어쓰기 하므로 addReservation은 더 이상 사용 안함 */
+    // fun addReservation(reservation: Reservation) {
+    //     _reservationHistory.value = _reservationHistory.value + reservation
+    // }
 }

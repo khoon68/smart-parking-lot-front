@@ -10,10 +10,12 @@ import com.example.parkingapp.data.dto.ReservationRequest
 import com.example.parkingapp.data.dto.ReservationResponse
 import com.example.parkingapp.data.dto.UserInfoResponse
 import com.example.parkingapp.data.model.ParkingLot
+import com.example.parkingapp.data.model.SimpleResponse
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.DELETE
 import retrofit2.http.GET
+import retrofit2.http.PATCH
 import retrofit2.http.POST
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -49,10 +51,15 @@ interface ParkingApi {
     suspend fun cancelReservation(
         @Path("id") reservationId: Long): Response<Unit>
 
-    @POST("reservations/barrier/open")
-    suspend fun openBarrier(
-        @Body request: BarrierOpenRequest): Response<String>
+    @PATCH("reservations/{reservationId}/status")
+    suspend fun updateReservationStatus(
+        @Path("reservationId") reservationId: Long,
+        @Query("status") status: String
+    ): Response<Unit>
 
-    @POST("reservations/barrier/close")
-    suspend fun closeBarrier(@Body request: BarrierOpenRequest): Response<String>
+    @POST("barrier/{slotId}/open")
+    suspend fun openBarrier(@Path("slotId") slotId: Long): Response<SimpleResponse>
+
+    @POST("barrier/{slotId}/close")
+    suspend fun closeBarrier(@Path("slotId") slotId: Long): Response<SimpleResponse>
 }
