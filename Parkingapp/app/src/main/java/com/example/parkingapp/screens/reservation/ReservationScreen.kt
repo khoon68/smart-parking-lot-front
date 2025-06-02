@@ -28,6 +28,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import android.widget.Toast
 import androidx.compose.ui.platform.LocalContext
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 
 
 @Composable
@@ -40,7 +42,10 @@ fun ReservationScreen(
     val selectedSlots = remember { mutableStateListOf<TimeSlot>() } // 선택된 시간 슬롯 저장
     val reservedLabels = viewModel.getReservedTimeSlots() // 이미 예약된 시간들
     val availableTimeSlots = viewModel.getTimeSlotsForParking(parking) // ✅ 요금 반영된 슬롯 리스트
-
+    val selectedDateString = remember {
+        val sdf = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault())
+        sdf.format(java.util.Date())
+    }
     // ✅ 선택된 시간 정렬
     val sortedSelected = selectedSlots.sortedBy { availableTimeSlots.indexOf(it) }
 
@@ -130,6 +135,7 @@ fun ReservationScreen(
                 Button(
                     onClick = {
                         navController.currentBackStackEntry?.savedStateHandle?.set("selectedTimeSlots", sortedSelected.map { it.label() })
+                        navController.currentBackStackEntry?.savedStateHandle?.set("selectedDate", selectedDateString)
                         navController.navigate("selectSlot/${parking.id}")
                     },
                     modifier = Modifier.fillMaxWidth(),
@@ -137,43 +143,6 @@ fun ReservationScreen(
                 ) {
                     Text("계속하기")
                 }
-                /*
-                Button(
-                    onClick = {
-                        CoroutineScope(Dispatchers.IO).launch {
-                            try {
-                                val request = ReservationRequest(
-                                    slotId = 1L, // ⚠️ 서버 요구사항: 슬롯 ID 필요 (임시로 1L 사용)
-                                    timeSlots = sortedSelected.map { it.label() }
-                                )
-
-                                val response = RetrofitInstance.api.createReservation(request)
-                                if (response.isSuccessful) {
-                                    val body = response.body()
-
-                                    // UI 작업은 Main에서 실행
-                                    launch(Dispatchers.Main) {
-                                        Toast.makeText(context, "예약 성공", Toast.LENGTH_SHORT).show()
-                                        navController.navigate("mypage") // 또는 payment
-                                    }
-                                } else {
-                                    launch(Dispatchers.Main) {
-                                        Toast.makeText(context, "예약 실패: ${response.code()}", Toast.LENGTH_SHORT).show()
-                                    }
-                                }
-                            } catch (e: Exception) {
-                                launch(Dispatchers.Main) {
-                                    Toast.makeText(context, "네트워크 오류: ${e.message}", Toast.LENGTH_SHORT).show()
-                                }
-                            }
-                        }
-                    },
-                    modifier = Modifier.fillMaxWidth(),
-                    enabled = canReserve
-                ) {
-                    Text("예약하기")
-                }
-                */
             }
         }
     )

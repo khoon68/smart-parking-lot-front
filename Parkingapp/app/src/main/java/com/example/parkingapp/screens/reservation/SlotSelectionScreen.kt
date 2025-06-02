@@ -44,6 +44,10 @@ fun SlotSelectionScreen(
             try {
                 val response = RetrofitInstance.create(context)
                     .getAvailableSlots(parkingLotId, date, timeSlots)
+
+                Log.d("SlotAPI", "🧾 timeSlots 요청: $timeSlots")
+                Log.d("SlotAPI", "📦 응답 슬롯 목록: ${response.map { "slot${it.slotNumber} → available=${it.available}" }}")
+
                 slots = response
             } catch (e: Exception) {
                 Toast.makeText(context, "슬롯 불러오기 실패: ${e.message}", Toast.LENGTH_SHORT).show()

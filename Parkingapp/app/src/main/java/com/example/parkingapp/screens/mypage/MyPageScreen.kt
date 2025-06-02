@@ -74,12 +74,20 @@ fun MyPageScreen(
                 items(reservations) { reservation ->
 
                     val statusLabel = when (reservation.status) {
-                        "RESERVED" -> "예약 대기"
-                        "ACTIVE" -> "예약 활성"
-                        "CANCELLED" -> "취소됨"
-                        "COMPLETED" -> "완료됨"
+                        "RESERVED" -> "대기"
+                        "ACTIVE" -> "활성"
+                        "CANCELLED" -> "취소"
+                        "COMPLETED" -> "완료"
                         else -> "알 수 없음"
                     }
+                    val statusColor = when (reservation.status) {
+                        "RESERVED" -> Color(0xFF1976D2) // 진한 파랑
+                        "ACTIVE" -> Color(0xFF388E3C)   // 진한 초록
+                        "COMPLETED" -> Color(0xFF616161) // 진한 회색
+                        "CANCELLED" -> Color(0xFFD32F2F) // 진한 빨강
+                        else -> Color.Gray
+                    }
+                    val canCancel = reservation.status == "RESERVED"
 
                     val isActive = reservation.status == "ACTIVE"
                     val isSlotOpened = reservation.isSlotOpened
@@ -94,7 +102,11 @@ fun MyPageScreen(
                             Text("주차장: ${reservation.parkingLotName}", style = MaterialTheme.typography.titleMedium)
                             Text("슬롯 번호: ${reservation.slotNumber}", style = MaterialTheme.typography.bodyMedium)
                             Text("시간: ${reservation.startTime} ~ ${reservation.endTime}", style = MaterialTheme.typography.bodyMedium)
-                            Text("상태: $statusLabel", style = MaterialTheme.typography.bodyMedium)
+                            Text(
+                                "상태: $statusLabel",
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = statusColor
+                            )
 
                             Spacer(modifier = Modifier.height(16.dp))
 
@@ -102,17 +114,20 @@ fun MyPageScreen(
                                 modifier = Modifier.fillMaxWidth(),
                                 horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.End)
                             ) {
-                                Button(onClick = {
-                                    viewModel.cancelReservationFromServer(
-                                        reservationId = reservation.id,
-                                        onSuccess = {
-                                            Toast.makeText(context, "예약이 취소되었습니다.", Toast.LENGTH_SHORT).show()
-                                        },
-                                        onFailure = { msg ->
-                                            Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
-                                        }
-                                    )
-                                }) {
+                                Button(
+                                    onClick = {
+                                        viewModel.cancelReservationFromServer(
+                                            reservationId = reservation.id,
+                                            onSuccess = {
+                                                Toast.makeText(context, "예약이 취소되었습니다.", Toast.LENGTH_SHORT).show()
+                                            },
+                                            onFailure = { msg ->
+                                                Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
+                                            }
+                                        )
+                                    },
+                                    enabled = canCancel
+                                ) {
                                     Text("예약 취소")
                                 }
 

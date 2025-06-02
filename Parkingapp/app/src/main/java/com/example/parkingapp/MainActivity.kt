@@ -170,10 +170,11 @@ class MainActivity : ComponentActivity() {
                         }
                         val parkingLotId = backStackEntry.arguments?.getString("parkingLotId")?.toLongOrNull()
                         val timeSlots = navController.previousBackStackEntry?.savedStateHandle?.get<List<String>>("selectedTimeSlots")
-                        if (parkingLotId != null && timeSlots != null) {
+                        val selectedDate = navController.previousBackStackEntry?.savedStateHandle?.get<String>("selectedDate")
+                        if (parkingLotId != null && timeSlots != null && selectedDate != null) {
                             SlotSelectionScreen(
                                 parkingLotId = parkingLotId,
-                                date = "2025-06-01", // 테스트용 고정 날짜
+                                date = selectedDate, // 테스트용 고정 날짜
                                 timeSlots = timeSlots,
                                 navController = navController,
                                 viewModel = viewModel,
