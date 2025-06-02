@@ -37,6 +37,7 @@ import com.example.parkingapp.ui.theme.ParkingappTheme
 import com.example.parkingapp.viewmodel.AuthViewModel
 import com.example.parkingapp.viewmodel.ParkingListViewModel
 import androidx.activity.viewModels // ✅ 이걸 꼭 import 해야 함
+import com.example.parkingapp.screens.mypage.MyPageTabScreen
 
 
 class MainActivity : ComponentActivity() {
@@ -217,9 +218,9 @@ class MainActivity : ComponentActivity() {
                     // 마이페이지 화면
                     composable("mypage") {
                         LaunchedEffect(Unit) {
-                            Log.d("Navigation", "📍 MyPageScreen 진입")
+                            Log.d("Navigation", "📍 MyPageTabScreen 진입")
                         }
-                        MyPageScreen(
+                        MyPageTabScreen(
                             viewModel = viewModel,
                             authViewModel = authViewModel,
                             onBack = { navController.popBackStack() },

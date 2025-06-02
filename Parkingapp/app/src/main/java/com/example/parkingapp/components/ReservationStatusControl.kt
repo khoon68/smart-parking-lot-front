@@ -45,26 +45,6 @@ fun ReservationStatusControl(
             ) {
                 Text("ACTIVE")
             }
-
-            Button(
-                onClick = {
-                    coroutineScope.launch {
-                        try {
-                            val response = api.updateReservationStatus(reservationId, "COMPLETED")
-                            if (response.isSuccessful) {
-                                message = "COMPLETED로 변경됨"
-                                viewModel.updateReservationStatusLocally(reservationId, "COMPLETED")
-                            } else {
-                                message = "실패: ${response.code()}"
-                            }
-                        } catch (e: Exception) {
-                            message = "오류 발생: ${e.localizedMessage}"
-                        }
-                    }
-                }
-            ) {
-                Text("COMPLETED")
-            }
         }
 
         Spacer(modifier = Modifier.height(8.dp))
