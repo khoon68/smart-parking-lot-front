@@ -2,6 +2,7 @@ package com.example.parkingapp.screens.reservation
 
 import android.util.Log
 import android.widget.Toast
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -25,13 +26,19 @@ fun PaymentScreen(
     reservation: Reservation,
     navController: NavController,
     viewModel: ParkingListViewModel,
-    onBack: () -> Unit
+    onBack: () -> Unit // ← 이건 더 이상 사용하지 않음
 ) {
     val context = LocalContext.current
 
+    // ✅ 시스템 뒤로가기 버튼 막기
+    BackHandler(enabled = true) {
+        // 아무 작업도 하지 않음 → 뒤로가기 비활성화
+    }
+
     Scaffold(
         topBar = {
-            TopBar(title = "결제", showBack = true, onBackClick = onBack)
+            // ✅ TopBar의 뒤로가기 버튼 제거
+            TopBar(title = "결제", showBack = false, onBackClick = {})
         }
     ) { innerPadding ->
         Column(

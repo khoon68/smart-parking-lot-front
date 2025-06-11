@@ -118,7 +118,7 @@ class ParkingListViewModel(context: Context, private val repository: ParkingLotR
 
     /** 특정 주차장에 대해 전체 시간 슬롯 반환 */
     fun getTimeSlotsForParking(parking: ParkingLot): List<TimeSlot> {
-        return (0 until 24).map { hour ->
+        return (8 until 15).map { hour ->
             val start = String.format("%02d:00", hour)
             val end = String.format("%02d:00", (hour + 1) % 24)
             TimeSlot(startTime = start, endTime = end).copyWithPrice(parking.pricePerHour)

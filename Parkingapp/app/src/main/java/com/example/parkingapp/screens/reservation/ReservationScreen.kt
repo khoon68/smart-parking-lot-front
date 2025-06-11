@@ -66,7 +66,7 @@ fun ReservationScreen(
         content = { paddingValues ->
             Column(modifier = Modifier.padding(paddingValues).padding(16.dp)) {
                 Text("주차장: ${parking.name}", style = MaterialTheme.typography.titleMedium)
-                Text("주소: ${parking.distance}")
+                Text("주소: ${parking.distance}m")
                 Text("요금: ${parking.pricePerHour}원/시간")
                 Spacer(modifier = Modifier.height(16.dp))
 

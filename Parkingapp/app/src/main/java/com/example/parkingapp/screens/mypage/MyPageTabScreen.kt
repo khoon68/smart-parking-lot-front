@@ -35,8 +35,8 @@ fun MyPageTabScreen(
         2 -> reservations.filter { it.status == "ACTIVE" }
         3 -> reservations.filter { it.status == "COMPLETED" }
         4 -> reservations.filter { it.status == "CANCELLED" }
-        else -> reservations
-    }
+        else -> reservations.filter {it.status != "CANCELLED"}
+    }.sortedByDescending { it.id }
 
     LaunchedEffect(Unit) {
         viewModel.fetchMyReservations()
@@ -160,11 +160,15 @@ fun ReservationCard(
 
     Card(modifier = Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
         Column(modifier = Modifier.padding(16.dp)) {
-            Text("예약 인덱스: ${reservation.id}", style = MaterialTheme.typography.titleMedium)
+            Text("예약 번호: ${reservation.id}", style = MaterialTheme.typography.titleMedium)
             Text("주차장: ${reservation.parkingLotName}", style = MaterialTheme.typography.titleMedium)
             Text("슬롯 번호: ${reservation.slotNumber}", style = MaterialTheme.typography.bodyMedium)
             Text("시간: ${reservation.startTime} ~ ${reservation.endTime}", style = MaterialTheme.typography.bodyMedium)
             Text("상태: $statusLabel", style = MaterialTheme.typography.bodyMedium, color = statusColor)
+            if (isActive) {
+                if (!isSlotOpened) Text("주차 가능")
+                else Text("주차 중")
+            }
             Spacer(modifier = Modifier.height(12.dp))
 
             Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.End)) {

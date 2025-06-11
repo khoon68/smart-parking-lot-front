@@ -25,11 +25,11 @@ fun ParkingItem(parking: ParkingLot, onClick: () -> Unit) {
             Spacer(modifier = Modifier.height(4.dp))
             Text(text = "요금: ${parking.pricePerHour}원/시간", style = MaterialTheme.typography.bodyMedium)
             Spacer(modifier = Modifier.height(4.dp))
-            Text(
-                text = if (parking.isAvailable) "이용 가능" else "이용 불가",
-                color = if (parking.isAvailable) Color(0xFF4CAF50) else Color(0xFFF44336),
-                style = MaterialTheme.typography.bodyMedium
-            )
+//            Text(
+//                text = if (parking.isAvailable) "이용 가능" else "이용 불가",
+//                color = if (parking.isAvailable) Color(0xFF4CAF50) else Color(0xFFF44336),
+//                style = MaterialTheme.typography.bodyMedium
+//            )
         }
     }
 }
